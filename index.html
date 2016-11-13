@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>DahSing Bank</title>
+    <link rel="stylesheet" href="./semantic/dist/semantic.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="ui secondary menu">
+        <div class="item">
+            <a href="" class="ui tiny image"><img src="./image/headerLogo.png" alt=""></a>
+        </div>
+        <div class="item">
+            <div class="ui icon basic button bar"><i class="sidebar icon"></i></div>
+        </div>
+        <div class="item">
+            <div class="ui icon input">
+                <input type="text" placeholder="Search...">
+                <i class="search icon"></i>
+            </div>
+        </div>
+        <div class="right item">
+            <div class="ui basic buttons">
+                <div class="ui button"><i class="user red icon"></i>Account</div>
+                <div class="ui button"><i class="call red icon"></i>Call</div>
+                <div class="ui button"><i class="setting red icon"></i>Settings</div>
+                <div class="ui button"><i class="remove red circle icon"></i>Exit</div>
+            </div>
+        </div>
+    </div>
+    <div class="content_box">
+        <div class="ui left floated menu">
+            <div class="ui styled accordion">
+                <div class="title active"><i class="dropdown icon"></i> Level 1 </div>
+                <div class="content active">Welcome to level 1
+                    <div class="accordion transition">
+                        <div class="active title"><i class="dropdown icon"></i> Level 1A </div>
+                        <div class="active content">
+                            <p>Level 1A Contents</p>
+                            <div class="accordion">
+                                <div class="title"><i class="dropdown icon"></i> Level 1A-A </div>
+                                <div class="content">Level 1A-A Contents </div>
+                                <div class="title"><i class="dropdown icon"></i> Level 1A-B </div>
+                                <div class="content">Level 1A-B Contents </div>
+                            </div>
+                        </div>
+                        <div class="title"><i class="dropdown icon"></i> Level 1B </div>
+                        <div class="content">Level 1B Contents </div>
+                        <div class="title"><i class="dropdown icon"></i> Level 1C </div>
+                        <div class="content">Level 1C Contents </div>
+                    </div>
+                </div>
+                <div class="title"><i class="dropdown icon"></i> Level 2 </div>
+                <div class="content">
+                    <p class="transition hidden">Welcome to level 2</p>
+                    <div class="accordion transition hidden">
+                        <div class="title"><i class="dropdown icon"></i> Level 2A </div>
+                        <div class="content">
+                            <p class="transition hidden">Level 2A Contents</p>
+                            <div class="accordion transition hidden">
+                                <div class="title"><i class="dropdown icon"></i> Level 2A-A </div>
+                                <div class="content">Level 2A-A Contents </div>
+                                <div class="title"><i class="dropdown icon"></i> Level 2A-B </div>
+                                <div class="content">Level 2A-B Contents </div>
+                            </div>
+                        </div>
+                        <div class="title"><i class="dropdown icon"></i> Level 2B </div>
+                        <div class="content">Level 2B Contents </div>
+                        <div class="title"><i class="dropdown icon"></i> Level 2C </div>
+                        <div class="content">Level 2C Contents </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui right floated content">
+            <div class="ui top attached tabular menu">
+                <a class="active item">Tab1</a>
+                <a class="item">Tab2</a>
+            </div>
+            <div class="ui bottom attached segment">
+                <div class="tab tab1">
+                    <form class="ui form">
+                        <div class="field">
+                            <label>Name</label>
+                            <div class="two fields">
+                                <div class="field">
+                                    <input type="text" name="shipping[first-name]" placeholder="First Name">
+                                </div>
+                                <div class="field">
+                                    <input type="text" name="shipping[last-name]" placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Billing Address</label>
+                            <div class="fields">
+                                <div class="twelve wide field">
+                                    <input type="text" name="shipping[address]" placeholder="Street Address">
+                                </div>
+                                <div class="four wide field">
+                                    <input type="text" name="shipping[address-2]" placeholder="Apt #">
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="ui dividing header">Billing Information</h4>
+                        <div class="field">
+                            <label>Card Type</label>
+                            <div class="ui selection dropdown">
+                                <input type="hidden" name="card[type]">
+                                <div class="default text">Type</div>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item" data-value="visa"><i class="visa icon"></i> Visa </div>
+                                    <div class="item" data-value="amex"><i class="amex icon"></i> American Express </div>
+                                    <div class="item" data-value="discover"><i class="discover icon"></i> Discover </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fields">
+                            <div class="seven wide field">
+                                <label>Card Number</label>
+                                <input type="text" name="card[number]" maxlength="16" placeholder="Card #">
+                            </div>
+                            <div class="three wide field">
+                                <label>CVC</label>
+                                <input type="text" name="card[cvc]" maxlength="3" placeholder="CVC">
+                            </div>
+                            <div class="six wide field">
+                                <label>Expiration</label>
+                                <div class="two fields">
+                                    <div class="field">
+                                        <select class="ui fluid search dropdown" name="card[expire-month]">
+                                            <option value="">Month</option>
+                                            <option value="1">January</option>
+                                            <option value="2">February</option>
+                                            <option value="3">March</option>
+                                            <option value="4">April</option>
+                                            <option value="5">May</option>
+                                            <option value="6">June</option>
+                                            <option value="7">July</option>
+                                            <option value="8">August</option>
+                                            <option value="9">September</option>
+                                            <option value="10">October</option>
+                                            <option value="11">November</option>
+                                            <option value="12">December</option>
+                                        </select>
+                                    </div>
+                                    <div class="field">
+                                        <input type="text" name="card[expire-year]" maxlength="4" placeholder="Year">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="ui dividing header">Receipt</h4>
+                        <div class="field">
+                            <label>Send Receipt To:</label>
+                            <div class="ui fluid multiple search selection dropdown">
+                                <input type="hidden" name="receipt">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">Saved Contacts</div>
+                                <div class="menu">
+                                    <div class="item" data-value="jenny" data-text="Jenny"><img class="ui mini avatar image" src="http://semantic-ui.com/images/avatar/small/jenny.jpg"> Jenny Hess </div>
+                                    <div class="item" data-value="elliot" data-text="Elliot"><img class="ui mini avatar image" src="http://semantic-ui.com/images/avatar/small/elliot.jpg"> Elliot Fu </div>
+                                    <div class="item" data-value="stevie" data-text="Stevie"><img class="ui mini avatar image" src="http://semantic-ui.com/images/avatar/small/stevie.jpg"> Stevie Feliciano </div>
+                                    <div class="item" data-value="christian" data-text="Christian"><img class="ui mini avatar image" src="http://semantic-ui.com/images/avatar/small/christian.jpg"> Christian </div>
+                                    <div class="item" data-value="matt" data-text="Matt"><img class="ui mini avatar image" src="http://semantic-ui.com/images/avatar/small/matt.jpg"> Matt </div>
+                                    <div class="item" data-value="justen" data-text="Justen"><img class="ui mini avatar image" src="http://semantic-ui.com/images/avatar/small/justen.jpg"> Justen Kitsune </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui segment">
+                            <div class="field">
+                                <div class="ui toggle checkbox">
+                                    <input type="checkbox" name="gift" tabindex="0" class="hidden">
+                                    <label>Do not include a receipt in the package</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui red button submit" tabindex="0">Submit Order</div>
+                    </form>
+                </div>
+                <div class="tab tab2 hidden">
+                    <table class="ui celled table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Status</th>
+                                <th>Notes</th>
+                                <th class="ui center aligned">operation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>No Name Specified</td>
+                                <td>Unknown</td>
+                                <td class="negative">None</td>
+                                <td class="ui center aligned">
+                                  <button class="primary small ui button">view</button>
+                                  <button class="positive small ui button">update</button>
+                                  <button class="negative small ui button">delete</button>
+                                </td>
+                            </tr>
+                            <tr class="positive">
+                                <td>Jimmy</td>
+                                <td><i class="icon checkmark"></i> Approved</td>
+                                <td>None</td>
+                                <td class="ui center aligned">
+                                  <button class="primary small ui button">view</button>
+                                  <button class="positive small ui button">update</button>
+                                  <button class="negative small ui button">delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jamie</td>
+                                <td>Unknown</td>
+                                <td class="positive"><i class="icon close"></i> Requires call</td>
+                                <td class="ui center aligned">
+                                  <button class="primary small ui button">view</button>
+                                  <button class="positive small ui button">update</button>
+                                  <button class="negative small ui button">delete</button>
+                                </td>
+                            </tr>
+                            <tr class="negative">
+                                <td>Jill</td>
+                                <td>Unknown</td>
+                                <td>None</td>
+                                <td class="ui center aligned">
+                                  <button class="primary small ui button">view</button>
+                                  <button class="positive small  ui button">update</button>
+                                  <button class="negative small ui button">delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui modal">
+        <div class="header">submit</div>
+        <div class="content">
+            <div class="description">
+                确认要提交所以数据吗？
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui negative button">否</div>
+            <div class="ui positive right labeled icon button">是<i class="checkmark icon"></i> </div>
+        </div>
+    </div>
+
+
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./semantic/dist/semantic.min.js"></script>
+    <script src="./script/mian.js"></script>
+</body>
+
+</html>

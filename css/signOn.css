@@ -1,0 +1,92 @@
+@charset "UTF-8";
+body {
+    background-image: url(http://akveo.com/blur-admin/assets/img/blur-bg.jpg);
+    background-color: #F2F2F2;
+}
+.ui.shape {
+    width: 100%;
+    height: 100%;
+}
+.ui.shape .sides{
+  position: absolute;
+  top: 25%;
+  left: 30%;
+}
+.ui.shape .signOn {
+    max-width: 600px;
+    max-height: 420px;
+    background-color: rgba(0, 0, 0, .55);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.signOn .ui.button {
+    color: #fff!important;
+    background: none;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 1) inset;
+}
+.ui.button:hover {
+    transform: scale(1.08);
+    background: 0 0;
+}
+.ui.button:active {
+    background: rgba(0, 0, 0, .4)!important;
+}
+.signOn .ui.header {
+    color: #fff;
+}
+.signOn .ui.header:not(.divider) {
+    margin-top: 0%;
+    padding-top: 6%;
+    font-size: 1.8em;
+}
+.signOn .ui.form {
+    margin-top: 5%;
+    margin-left: 16%;
+}
+.ui.form input[type=text], .ui.form input[type=password] {
+    background-color: rgba(0, 0, 0, .4);
+    color: #fff;
+}
+.ui.form input[type=text]:focus, .ui.form input[type=password]:focus {
+    color: rgba(255, 255, 255, 1);
+    background: none;
+}
+.signOn .ui.header.icon:not(.divider) {
+    margin-top: 6%;
+    font-size: 1em;
+}
+.signOn .ui.divider.horizontal.header {
+    width: 85%;
+    margin-left: 7.5%;
+}
+.signOn .ui.grid {
+    width: 80%;
+    margin-left: 10%;
+}
+
+/*.signOn .ui.grid .ui.center.aligned.icon.header{
+  transition: all .15s ease;
+}*/
+
+.signOn .ui.grid .ui.center.aligned.icon.header:hover {
+    transform: scale(1.08);
+}
+/*.signOn .side, .ui.shape .sides {
+    width: 100%;
+    height: 100%;
+}*/
+.signOn.signUp .ui.header:not(.divider) {
+    padding-top: 3%;
+}
+.signOn.signUp .ui.header {
+    margin: 0;
+}
+.signOn.other .ui.form {
+    margin-left: 28%;
+}
+
+.signOn.other .ui.button:hover {
+    transform: scale(1.02);
+    background: rgba(0, 0, 0, .4);
+}

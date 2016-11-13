@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>DahSing Bank</title>
+    <link rel="stylesheet" href="./semantic/dist/semantic.min.css">
+    <link rel="stylesheet" href="./css/test.css">
+</head>
+
+<body>
+
+    <div class="ui grid">
+        <div class="sixteen wide column">
+            <div class="ui secondary menu">
+                <div class="item">
+                    <a href="" class="ui tiny image"><img src="./image/headerLogo.png" alt=""></a>
+                </div>
+                <div class="item">
+                    <div class="ui icon basic button bar"><i class="sidebar icon"></i></div>
+                </div>
+                <div class="item">
+                    <div class="ui icon input">
+                        <input type="text" placeholder="Search...">
+                        <i class="search icon"></i>
+                    </div>
+                </div>
+                <div class="right item">
+                    <div class="ui basic buttons">
+                        <div class="ui button"><i class="user red icon"></i>Account</div>
+                        <div class="ui button"><i class="call red icon"></i>Call</div>
+                        <div class="ui button"><i class="setting red icon"></i>Settings</div>
+                        <div class="ui button"><i class="remove red circle icon"></i>Exit</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="three wide column">
+            <div class="ui secondary vertical pointing menu">
+                <div class="ui styled accordion">
+                    <a class="item active title"><i class="edit left floated icon"></i>元素<i class="dropdown icon"></i></a>
+                    <div class="active content">
+                        <div class="ui vertical text menu">
+                            <a class="item" data-name="button">按钮</a>
+                            <a class="item" data-name="header">标题</a>
+                            <a class="item">图标</a>
+                            <a class="item">图片</a>
+                            <a class="item">输入框</a>
+                            <a class="item">列表</a>
+                            <a class="item">加载器</a>
+                        </div>
+                    </div>
+                    <a class="item title"><i class="cubes left floated icon"></i>组合<i class="dropdown icon"></i></a>
+                    <div class="content">
+                        <div class="ui vertical text menu">
+                            <a class="item" data-name="controlsType">控件类型</a>
+                            <a class="item" data-name="forms">表单</a>
+                            <a class="item" data-name="tab2">表格</a>
+                        </div>
+                    </div>
+                    <a class="item title"><i class="area chart left floated icon"></i>视图<i class="dropdown icon"></i></a>
+                    <div class="content">
+                        <div class="ui vertical text menu">
+                            <a class="item" data-name="tabSheet">TabSheet</a>
+                            <a class="item" data-name="trading">交易页面</a>
+                            <a class="item" data-name="general">一般页面</a>
+                        </div>
+                    </div>
+                    <a class="item title"><i class="block layout left floated icon"></i>模块<i class="dropdown icon"></i></a>
+                    <div class="content">
+                        <div class="ui vertical text menu">
+                            <a class="item">Closest </a>
+                            <a class="item">Most Comments </a>
+                            <a class="item">Most Popular </a>
+                        </div>
+                    </div>
+                    <a class="item title"><i class="list layout left floated icon"></i>菜单<i class="dropdown icon"></i></a>
+                    <div class="content">
+                        <div class="accordion styled transition visible" style="display: block !important;">
+                            <div class="title"><i class="dropdown icon"></i> Level 1A </div>
+                            <div class="content">
+                                <div class="accordion transition visible" style="display: block !important;">
+                                    <div class="title"><i class="dropdown icon"></i> Level 1A-A </div>
+                                    <div class="content">
+                                        <div class="ui vertical text menu">
+                                            <a class="item">Closest </a>
+                                            <a class="item">Most Comments </a>
+                                            <a class="item">Most Popular </a>
+                                        </div>
+                                    </div>
+                                    <div class="title"><i class="dropdown icon"></i> Level 1A-B </div>
+                                    <div class="content">
+                                        <div class="ui vertical text menu">
+                                            <a class="item">Closest </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thirteen wide column">
+            <div class="ui right floated content">
+                <div class="ui main top attached tabular menu">
+                    <!-- <a class="item" data-name="tab2">Tab2<i class="remove icon"></i></a> -->
+                </div>
+                <div class="ui main bottom attached segment">
+                  <div class="tab general">
+                    <div class="ui container">
+                      <div class="ui divider hidden"></div>
+                      <div class="ui form">
+                        <div class="inline fields">
+                          <div class="two wide required field">
+                            <label for="">Parameter No:</label>
+                          </div>
+                          <div class="five wide field">
+                            <select name="" id="" class="ui dropdown">
+                                <option value="001">000001</option>
+                                <option value="002">000002</option>
+                                <option value="003">000003</option>
+                                <option value="004">000004</option>
+                                <option value="005">000005</option>
+                                <option value="006">000006</option>
+                                <option value="007">000007</option>
+                                <option value="008">000008</option>
+                                <option value="009">000009</option>
+                                <option value="0010">0000010</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="inline fields">
+                          <div class="two wide required field">
+                            <label for="">Parameter ID:</label>
+                          </div>
+                          <div class="five wide required field">
+                              <input type="text" name="" id="" placeholder="请输入ID...">
+                          </div>
+                        </div>
+                        <div class="inline fields">
+                          <div class="two wide required field">
+                            <label for="">Parameter Type:</label>
+                          </div>
+                          <div class="five wide required field">
+                              <input type="text" name="" id="" placeholder="请输入Type...">
+                          </div>
+                        </div>
+                        <div class="ui divider hidden"></div>
+                        <div class="ui button positive">Submit</div>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="tab trading">
+                      <div class="ui container">
+                        <div class="ui form">
+                            <div class="inline fields">
+                                <div class="three wide field">
+                                    <label for="">Client NO:</label>
+                                </div>
+                                <div class="five wide field">
+                                  <div class="ui icon input">
+                                      <input type="text" placeholder="Search...">
+                                      <i class="search icon"></i>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="inline fields">
+                                <div class="three wide field">
+                                    <label for="">ID No:</label>
+                                </div>
+                                <div class="field">
+                                    <select name="" id="" class="ui dropdown search">
+                                        <option value="001">000001</option>
+                                        <option value="002">000002</option>
+                                        <option value="003">000003</option>
+                                        <option value="004">000004</option>
+                                        <option value="005">000005</option>
+                                        <option value="006">000006</option>
+                                        <option value="007">000007</option>
+                                        <option value="008">000008</option>
+                                        <option value="009">000009</option>
+                                        <option value="0010">0000010</option>
+                                    </select>
+                                </div>
+                                <div class="five wide field">
+                                    <input type="text" name="" id="" placeholder="请输入ID...">
+                                </div>
+                            </div>
+                            <div class="inline fields">
+                                <div class="three wide field">
+                                    <label for="">Client Type:</label>
+                                </div>
+                                <div class="five wide field">
+                                    <select name="" id="" class="ui dropdown">
+                                        <option value="001">Type1</option>
+                                        <option value="002">Type2</option>
+                                        <option value="003">Type3</option>
+                                        <option value="004">Type4</option>
+                                        <option value="005">Type5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="inline fields">
+                                <div class="three wide field">
+                                    <label for="">Full Name(English):</label>
+                                </div>
+                                <div class="five wide field">
+                                    <input type="text" name="" id="" placeholder="请输入name...">
+                                </div>
+                            </div>
+                            <div class="inline fields">
+                                <div class="three wide field">
+                                    <label for="">Name(Local):</label>
+                                </div>
+                                <div class="five wide field">
+                                    <input type="text" name="" id="" placeholder="请输入name...">
+                                </div>
+                            </div>
+                            <div class="ui divider hidden"></div>
+                            <div class="ui button positive">Submit</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab tabSheet">
+                        <div class="ui header center aligned">TabSheet</div>
+                        <div class="ui divider hidden"></div>
+                        <div class="ui top attached tabular menu">
+                            <a class="active item">tab1</a>
+                            <a class="item">tab2</a>
+                            <a class="item">tab3</a>
+                            <a class="item">tab4</a>
+                        </div>
+                        <div class="ui bottom attached segment">
+                            <div subTab="1" class="item tab">
+                                <div class="ui form">
+                                    <div class="inline fields">
+                                        <div class="three wide field">
+                                            <label for="">Client NO:</label>
+                                        </div>
+                                        <div class="field">
+                                            <select name="" id="" class="ui dropdown">
+                                                <option value="001">000001</option>
+                                                <option value="002">000002</option>
+                                                <option value="003">000003</option>
+                                                <option value="004">000004</option>
+                                                <option value="005">000005</option>
+                                                <option value="006">000006</option>
+                                                <option value="007">000007</option>
+                                                <option value="008">000008</option>
+                                                <option value="009">000009</option>
+                                                <option value="0010">0000010</option>
+                                            </select>
+                                        </div>
+                                        <div class="five wide field">
+                                            <input type="text" name="" id="" placeholder="请输入ID...">
+                                        </div>
+                                    </div>
+                                    <div class="inline fields">
+                                        <div class="three wide field">
+                                            <label for="">ID No:</label>
+                                        </div>
+                                        <div class="five wide field">
+                                            <input type="text" name="" id="" placeholder="请输入ID...">
+                                        </div>
+                                    </div>
+                                    <div class="inline fields">
+                                        <div class="three wide field">
+                                            <label for="">Client Type:</label>
+                                        </div>
+                                        <div class="five wide field">
+                                            <select name="" id="" class="ui dropdown">
+                                                <option value="001">000001</option>
+                                                <option value="002">000002</option>
+                                                <option value="003">000003</option>
+                                                <option value="004">000004</option>
+                                                <option value="005">000005</option>
+                                                <option value="006">000006</option>
+                                                <option value="007">000007</option>
+                                                <option value="008">000008</option>
+                                                <option value="009">000009</option>
+                                                <option value="0010">0000010</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="inline fields">
+                                        <div class="three wide field">
+                                            <label for="">Full Name(English):</label>
+                                        </div>
+                                        <div class="five wide field">
+                                            <input type="text" name="" id="" placeholder="请输入name...">
+                                        </div>
+                                    </div>
+                                    <div class="inline fields">
+                                        <div class="three wide field">
+                                            <label for="">Name(Local):</label>
+                                        </div>
+                                        <div class="five wide field">
+                                            <input type="text" name="" id="" placeholder="请输入name...">
+                                        </div>
+                                    </div>
+                                    <div class="inline fields">
+                                        <div class="three wide field">
+                                            <label for="">Transaction Officer No.:</label>
+                                        </div>
+                                        <div class="five wide field">
+                                            <input type="text" name="" id="" placeholder="请输入no...">
+                                        </div>
+                                    </div>
+                                    <div class="inline fields">
+                                        <div class="three wied field">
+                                            <label for="">Transaction Officer Name:</label>
+                                        </div>
+                                        <div class="five wide field">
+                                            <input type="text" name="" id="" placeholder="请输入Transaction name...">
+                                        </div>
+                                    </div>
+                                    <div class="ui divider hidden"></div>
+                                    <div class="ui button positive">Submit</div>
+                                </div>
+                            </div>
+                            <div subTab="2" class="item tab">
+                                <div class="ui header center aligned">大家好，我是tab2</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae vitae eos enim aut quibusdam perspiciatis non velit tempore, facilis a quos incidunt in sed tenetur reiciendis qui impedit animi. Eum?</p>
+                            </div>
+                            <div subTab="3" class="item tab">
+                                <div class="ui header center aligned">大家好，我是tab3</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quisquam non soluta magni aut sint maxime sit cumque laudantium voluptas perspiciatis aspernatur modi, quidem qui veniam officiis quod veritatis nesciunt.</p>
+                            </div>
+                            <div subTab="4" class="item tab">
+                                <div class="ui header center aligned">大家好，我是tab4</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repudiandae quidem rem, nihil, accusamus ratione error ex veritatis maxime excepturi voluptate cupiditate hic aliquam, voluptatem beatae molestias possimus, itaque ad?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab forms">
+                        <div class="ui center aligned header">表单</div>
+                        <div class="ui divider hidden"></div>
+                        <div class="ui left aligned container">
+                            <form class="ui form">
+                                <div class="field">
+                                    <label>First Name</label>
+                                    <input type="text" name="first-name" placeholder="First Name">
+                                </div>
+                                <div class="field">
+                                    <label>Last Name</label>
+                                    <input type="text" name="last-name" placeholder="Last Name">
+                                </div>
+                                <div class="field">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" tabindex="0" class="hidden">
+                                        <label>I agree to the Terms and Conditions</label>
+                                    </div>
+                                </div>
+                                <button class="ui positive button" type="submit">Submit</button>
+                            </form>
+                        </div>
+                        <div class="ui divider hidden"></div>
+                        <div class="ui left aligned container">
+                            <div class="ui header">组合（可以同一行显示）</div>
+                            <div class="ui divider hidden"></div>
+                            <div class="ui form">
+                                <div class="three fields">
+                                    <div class="field">
+                                        <label>First name</label>
+                                        <input type="text" placeholder="First Name">
+                                    </div>
+                                    <div class="field">
+                                        <label>Middle name</label>
+                                        <input type="text" placeholder="Middle Name">
+                                    </div>
+                                    <div class="field">
+                                        <label>Last name</label>
+                                        <input type="text" placeholder="Last Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui header">文本域</div>
+                            <div class="ui divider hidden"></div>
+                            <div class="ui form">
+                                <div class="field">
+                                    <label>Text</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="ui header">复选框、单选框</div>
+                            <div class="ui divider hidden"></div>
+                            <div class="ui form">
+                                <div class="inline field">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" tabindex="0" class="hidden">
+                                        <label>复选框</label>
+                                    </div>
+                                </div>
+                                <div class="inline fields">
+                                    <label for="fruit">Select your favorite fruit:</label>
+                                    <div class="field">
+                                        <div class="ui radio checkbox">
+                                            <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
+                                            <label>Apples</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="ui radio checkbox">
+                                            <input type="radio" name="fruit" tabindex="0" class="hidden">
+                                            <label>Oranges</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="ui radio checkbox">
+                                            <input type="radio" name="fruit" tabindex="0" class="hidden">
+                                            <label>Pears</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="ui radio checkbox">
+                                            <input type="radio" name="fruit" tabindex="0" class="hidden">
+                                            <label>Grapefruit</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui header">提示</div>
+                            <div class="ui divider hidden"></div>
+                            <div class="ui form success">
+                                <div class="field">
+                                    <label>E-mail</label>
+                                    <input type="email" placeholder="joe@schmoe.com">
+                                </div>
+                                <div class="ui success message">
+                                    <div class="header">Form Completed</div>
+                                    <p>You're all signed up for the newsletter.</p>
+                                </div>
+                                <div class="ui positive submit button">Submit</div>
+                            </div>
+                            <div class="ui divider hidden"></div>
+                            <div class="ui form error">
+                                <div class="field">
+                                    <label>E-mail</label>
+                                    <input type="email" placeholder="joe@schmoe.com">
+                                </div>
+                                <div class="ui error message">
+                                    <div class="header">Action Forbidden</div>
+                                    <p>You can only sign up for an account once with a given e-mail address.</p>
+                                </div>
+                                <div class="ui positive submit button">Submit</div>
+                            </div>
+                            <div class="ui divider hidden"></div>
+                            <div class="ui form">
+                                <div class="two fields">
+                                    <div class="field error">
+                                        <label>First Name</label>
+                                        <input placeholder="First Name" type="text">
+                                    </div>
+                                    <div class="field">
+                                        <label>Last Name</label>
+                                        <input placeholder="Last Name" type="text">
+                                    </div>
+                                </div>
+                                <div class="field error">
+                                    <label>Gender</label>
+                                    <div class="ui selection dropdown">
+                                        <div class="default text">Select</div>
+                                        <i class="dropdown icon"></i>
+                                        <input type="hidden" name="gender">
+                                        <div class="menu">
+                                            <div class="item" data-value="male">Male</div>
+                                            <div class="item" data-value="female">Female</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inline field error">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" tabindex="0" class="hidden">
+                                        <label>I agree to the Terms and Conditions</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui header">禁用、只读</div>
+                            <div class="ui divider hidden"></div>
+                            <div class="ui form">
+                                <div class="two fields">
+                                    <div class="disabled field">
+                                        <label>First Name</label>
+                                        <input placeholder="Read Only" type="text" disabled="" tabindex="-1">
+                                    </div>
+                                    <div class="disabled field">
+                                        <label>Last Name</label>
+                                        <input placeholder="Disabled" type="text" disabled="" tabindex="-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui form">
+                                <div class="two fields">
+                                    <div class="field">
+                                        <label>First Name</label>
+                                        <input placeholder="Read Only" readonly="" type="text">
+                                    </div>
+                                    <div class="field">
+                                        <label>Last Name</label>
+                                        <input placeholder="Read Only" readonly="" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui header">必填字段</div>
+                            <div class="ui divider hidden"></div>
+                            <div class="ui form">
+                                <div class="required inline field">
+                                    <label>Last name</label>
+                                    <input type="text" placeholder="Full Name">
+                                </div>
+                                <div class="required inline field">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" tabindex="0" class="hidden">
+                                        <label>I agree to the terms and conditions</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab controlsType">
+                        <div class="ui center aligned header">三种状态的按钮</div>
+                        <div class="ui divider hidden"></div>
+                        <div class="ui center aligned container">
+                            <button class="positive ui button">Submit</button>
+                            <button class="negative ui button">Cancel</button>
+                            <button class="ui disabled button">disabled</button>
+                            <div class="ui header">搜索框</div>
+                            <div class="ui divider hidden"></div>
+                            <div class="ui icon input">
+                                <input type="text" placeholder="Search...">
+                                <i class="search icon"></i>
+                            </div>
+                        </div>
+                        <div class="ui divider hidden"></div>
+                        <form class="ui form">
+
+                            <div class="field">
+                                <label>Card Type</label>
+                                <div class="ui selection dropdown">
+                                    <input type="hidden" name="card[type]">
+                                    <div class="default text">Type</div>
+                                    <i class="dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item" data-value="visa"><i class="visa icon"></i> Visa </div>
+                                        <div class="item" data-value="amex"><i class="amex icon"></i> American Express </div>
+                                        <div class="item" data-value="discover"><i class="discover icon"></i> Discover </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fields">
+                                <div class="seven wide field">
+                                    <label>Card Number</label>
+                                    <input type="text" name="card[number]" maxlength="16" placeholder="Card #">
+                                </div>
+                                <div class="three wide field">
+                                    <label>CVC</label>
+                                    <input type="text" name="card[cvc]" maxlength="3" placeholder="CVC">
+                                </div>
+                                <div class="six wide field">
+                                    <label>Expiration</label>
+                                    <div class="two fields">
+                                        <div class="field">
+                                            <select class="ui fluid search dropdown" name="card[expire-month]">
+                                                <option value="">Month</option>
+                                                <option value="1">January</option>
+                                                <option value="2">February</option>
+                                                <option value="3">March</option>
+                                                <option value="4">April</option>
+                                                <option value="5">May</option>
+                                                <option value="6">June</option>
+                                                <option value="7">July</option>
+                                                <option value="8">August</option>
+                                                <option value="9">September</option>
+                                                <option value="10">October</option>
+                                                <option value="11">November</option>
+                                                <option value="12">December</option>
+                                            </select>
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" name="card[expire-year]" maxlength="4" placeholder="Year">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="ui dividing header">Receipt</h4>
+                            <div class="field">
+                                <label>Send Receipt To:</label>
+                                <div class="ui fluid multiple search selection dropdown">
+                                    <input type="hidden" name="receipt">
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text">Saved Contacts</div>
+                                    <div class="menu">
+                                        <div class="item" data-value="jenny" data-text="Jenny"><img class="ui mini avatar image" src="http://semantic-ui.com/images/avatar/small/jenny.jpg"> Jenny Hess </div>
+                                        <div class="item" data-value="elliot" data-text="Elliot"><img class="ui mini avatar image" src="http://semantic-ui.com/images/avatar/small/elliot.jpg"> Elliot Fu </div>
+                                        <div class="item" data-value="stevie" data-text="Stevie"><img class="ui mini avatar image" src="http://semantic-ui.com/images/avatar/small/stevie.jpg"> Stevie Feliciano </div>
+                                        <div class="item" data-value="christian" data-text="Christian"><img class="ui mini avatar image" src="http://semantic-ui.com/images/avatar/small/christian.jpg"> Christian </div>
+                                        <div class="item" data-value="matt" data-text="Matt"><img class="ui mini avatar image" src="http://semantic-ui.com/images/avatar/small/matt.jpg"> Matt </div>
+                                        <div class="item" data-value="justen" data-text="Justen"><img class="ui mini avatar image" src="http://semantic-ui.com/images/avatar/small/justen.jpg"> Justen Kitsune </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui segment">
+                                <div class="field">
+                                    <div class="ui toggle checkbox">
+                                        <input type="checkbox" name="gift" tabindex="0" class="hidden">
+                                        <label>Do not include a receipt in the package</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui center aligned container">
+                                <div class="ui positive button submit" tabindex="0">Submit Order</div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab button">
+                        <div class="ui center aligned header">按钮（button）</div>
+                        <div class="ui hidden divider"></div>
+                        <div class="ui center aligned container">
+                            <div class="ui button">标准按钮</div>
+                            <button class="ui basic button"><i class="icon user"></i>添加好友</button>
+                            <div class="ui header">按钮的主色调</div>
+                            <div class="ui hidden divider"></div>
+                            <button class="ui primary basic button">Primary</button>
+                            <button class="ui secondary basic button">Secondary</button>
+                            <button class="ui positive basic button">Positive</button>
+                            <button class="ui negative basic button">Negative</button>
+                            <div class="ui hidden divider"></div>
+                            <button class="ui primary button">Primary</button>
+                            <button class="ui secondary button">Secondary</button>
+                            <button class="ui positive button">Positive</button>
+                            <button class="ui negative button">Negative</button>
+                            <div class="ui header">按钮的加载</div>
+                            <div class="ui hidden divider"></div>
+                            <button class="ui loading button">Loading</button>
+                            <button class="ui basic loading button">Loading</button>
+                            <button class="ui primary loading button">Loading</button>
+                            <button class="ui secondary loading button">Loading</button>
+                            <div class="ui header">圆形按钮</div>
+                            <div class="ui hidden divider"></div>
+                            <button class="ui circular facebook icon button">
+                                <i class="facebook icon"></i>
+                            </button>
+                            <button class="ui circular twitter icon button">
+                                <i class="twitter icon"></i>
+                            </button>
+                            <button class="ui circular linkedin icon button">
+                                <i class="linkedin icon"></i>
+                            </button>
+                            <button class="ui circular google plus icon button">
+                                <i class="google plus icon"></i>
+                            </button>
+                            <div class="ui header">按钮组</div>
+                            <div class="ui hidden divider"></div>
+                            <div class="ui small basic icon buttons">
+                                <button class="ui button"><i class="file icon"></i></button>
+                                <button class="ui button"><i class="save icon"></i></button>
+                                <button class="ui button"><i class="upload icon"></i></button>
+                                <button class="ui button"><i class="download icon"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab tab2 hidden">
+                        <div class="ui header center aligned">表格</div>
+                        <div class="ui divider hidden"></div>
+                        <table class="ui celled table">
+                            <thead>
+                                <tr>
+                                    <th>标题</th>
+                                    <th>标题</th>
+                                    <th>标题</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                                <tr>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th colspan="3">
+                                        <div class="ui right floated pagination menu">
+                                            <a class="icon item">
+                                                <i class="left chevron icon"></i>
+                                            </a>
+                                            <a class="item">1</a>
+                                            <a class="item">2</a>
+                                            <a class="item">3</a>
+                                            <a class="item">4</a>
+                                            <a class="icon item">
+                                                <i class="right chevron icon"></i>
+                                            </a>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <div class="ui divider hidden"></div>
+                        <table class="ui celled table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Status</th>
+                                    <th>Notes</th>
+                                    <th class="ui center aligned">operation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>No Name Specified</td>
+                                    <td>Unknown</td>
+                                    <td class="negative">None</td>
+                                    <td class="ui center aligned">
+                                        <button class="primary small ui button">view</button>
+                                        <button class="positive small ui button">update</button>
+                                        <button class="negative small ui button">delete</button>
+                                    </td>
+                                </tr>
+                                <tr class="positive">
+                                    <td>Jimmy</td>
+                                    <td><i class="icon checkmark"></i> Approved</td>
+                                    <td>None</td>
+                                    <td class="ui center aligned">
+                                        <button class="primary small ui button">view</button>
+                                        <button class="positive small ui button">update</button>
+                                        <button class="negative small ui button">delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Jamie</td>
+                                    <td>Unknown</td>
+                                    <td class="positive"><i class="icon close"></i> Requires call</td>
+                                    <td class="ui center aligned">
+                                        <button class="primary small ui button">view</button>
+                                        <button class="positive small ui button">update</button>
+                                        <button class="negative small ui button">delete</button>
+                                    </td>
+                                </tr>
+                                <tr class="negative">
+                                    <td>Jill</td>
+                                    <td>Unknown</td>
+                                    <td>None</td>
+                                    <td class="ui center aligned">
+                                        <button class="primary small ui button">view</button>
+                                        <button class="positive small  ui button">update</button>
+                                        <button class="negative small ui button">delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui modal">
+        <div class="header">submit</div>
+        <div class="content">
+            <div class="description">
+                确认要提交所以数据吗？
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui negative button">否</div>
+            <div class="ui positive right labeled icon button">是<i class="checkmark icon"></i> </div>
+        </div>
+    </div>
+
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./semantic/dist/semantic.min.js"></script>
+    <script src="./script/test.js"></script>
+</body>
+
+</html>
