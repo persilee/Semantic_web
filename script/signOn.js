@@ -1,4 +1,10 @@
 $(function(){
+
+
+	// $('.ui.shape .sides').css('left',($(window).width() - $('.ui.shape .signOn').width())/2);
+
+
+
 	$('.ui.shape ').on('click','.side.active .signOn .column .ui.header.icon.on',function(){
 		$('.shape')
 		.shape('set next side', '.first.side')

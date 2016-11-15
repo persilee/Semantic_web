@@ -1,0 +1,25 @@
+@charset "UTF-8";
+body {
+    /*background-image: url(http://akveo.com/blur-admin/assets/img/blur-bg.jpg);*/
+    background-color: #F2F2F2;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.error.ui.container {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 35%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .55);
+    color: #fff;
+    border-radius: 6px;
+}
+
+.error.ui.container .ui.red:hover{
+  color: rgba(0, 0, 0, .4)!important;
+}

@@ -43,12 +43,7 @@
                     <div class="active content">
                         <div class="ui vertical text menu">
                             <a class="item" data-name="button">按钮</a>
-                            <a class="item" data-name="header">标题</a>
-                            <a class="item">图标</a>
-                            <a class="item">图片</a>
-                            <a class="item">输入框</a>
-                            <a class="item">列表</a>
-                            <a class="item">加载器</a>
+                            <a class="item" data-name="input">输入框</a>
                         </div>
                     </div>
                     <a class="item title"><i class="cubes left floated icon"></i>组合<i class="dropdown icon"></i></a>
@@ -67,12 +62,12 @@
                             <a class="item" data-name="general">一般页面</a>
                         </div>
                     </div>
-                    <a class="item title"><i class="block layout left floated icon"></i>模块<i class="dropdown icon"></i></a>
+                    <a class="item title"><i class="sticky note left floated icon"></i>页面<i class="dropdown icon"></i></a>
                     <div class="content">
                         <div class="ui vertical text menu">
-                            <a class="item">Closest </a>
-                            <a class="item">Most Comments </a>
-                            <a class="item">Most Popular </a>
+                            <a href="./signOn.html" target="_blank" class="item">登录页面</a>
+                            <a href="./404.html" target="_blank" class="item">404 Page</a>
+                            <a class="item modal test">弹出层</a>
                         </div>
                     </div>
                     <a class="item title"><i class="list layout left floated icon"></i>菜单<i class="dropdown icon"></i></a>
@@ -108,16 +103,59 @@
                     <!-- <a class="item" data-name="tab2">Tab2<i class="remove icon"></i></a> -->
                 </div>
                 <div class="ui main bottom attached segment">
-                  <div class="tab general">
-                    <div class="ui container">
-                      <div class="ui divider hidden"></div>
-                      <div class="ui form">
-                        <div class="inline fields">
-                          <div class="two wide required field">
-                            <label for="">Parameter No:</label>
-                          </div>
-                          <div class="five wide field">
-                            <select name="" id="" class="ui dropdown">
+                    <div class="tab input">
+                        <div class="ui header center aligned">输入框（input）</div>
+                        <div class="ui divider hidden"></div>
+                        <div class="ui container center aligned">
+                            <div class="ui header">普通输入框</div>
+                            <div class="ui input">
+                                <input type="text" placeholder="Input...">
+                            </div>
+                            <div class="ui header">焦点和禁用状态Focus or Disable</div>
+                            <div class="ui input focus">
+                                <input type="text" placeholder="Input...">
+                            </div>
+                            <div class="ui input disable">
+                                <input type="text" placeholder="Input..." disabled="">
+                            </div>
+                            <div class="ui header">加载状态Loading</div>
+                            <div class="ui input left icon loading">
+                                <input type="text" placeholder="Input...">
+                                <i class="search icon"></i>
+                            </div>
+                            <div class="ui header">Error状态</div>
+                            <div class="ui input left icon error">
+                                <input type="text" placeholder="Input...">
+                                <i class="search icon"></i>
+                            </div>
+                            <div class="ui header">带图标和标签的输入框</div>
+                            <div class="ui icon input">
+                                <input type="text" placeholder="Input...">
+                                <i class="search icon"></i>
+                            </div>
+                            <div class="ui divider hidden"></div>
+                            <div class="ui right labeled input">
+                                <div class="ui label">$</div>
+                                <input type="text" placeholder="Amount">
+                                <div class="ui basic label">.00</div>
+                            </div>
+                            <div class="ui divider hidden"></div>
+                            <div class="ui right labeled input">
+                                <input type="text" placeholder="Enter weight..">
+                                <div class="ui basic label">kg </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab general">
+                        <div class="ui container">
+                            <div class="ui divider hidden"></div>
+                            <div class="ui form">
+                                <div class="inline fields">
+                                    <div class="two wide required field">
+                                        <label for="">Parameter No:</label>
+                                    </div>
+                                    <div class="five wide field">
+                                        <select name="" id="" class="ui dropdown">
                                 <option value="001">000001</option>
                                 <option value="002">000002</option>
                                 <option value="003">000003</option>
@@ -129,49 +167,49 @@
                                 <option value="009">000009</option>
                                 <option value="0010">0000010</option>
                             </select>
-                          </div>
-                        </div>
-                        <div class="inline fields">
-                          <div class="two wide required field">
-                            <label for="">Parameter ID:</label>
-                          </div>
-                          <div class="five wide required field">
-                              <input type="text" name="" id="" placeholder="请输入ID...">
-                          </div>
-                        </div>
-                        <div class="inline fields">
-                          <div class="two wide required field">
-                            <label for="">Parameter Type:</label>
-                          </div>
-                          <div class="five wide required field">
-                              <input type="text" name="" id="" placeholder="请输入Type...">
-                          </div>
-                        </div>
-                        <div class="ui divider hidden"></div>
-                        <div class="ui button positive">Submit</div>
-                      </div>
-                    </div>
-                  </div>
-                    <div class="tab trading">
-                      <div class="ui container">
-                        <div class="ui form">
-                            <div class="inline fields">
-                                <div class="three wide field">
-                                    <label for="">Client NO:</label>
+                                    </div>
                                 </div>
-                                <div class="five wide field">
-                                  <div class="ui icon input">
-                                      <input type="text" placeholder="Search...">
-                                      <i class="search icon"></i>
-                                  </div>
+                                <div class="inline fields">
+                                    <div class="two wide required field">
+                                        <label for="">Parameter ID:</label>
+                                    </div>
+                                    <div class="five wide required field">
+                                        <input type="text" name="" id="" placeholder="请输入ID...">
+                                    </div>
                                 </div>
+                                <div class="inline fields">
+                                    <div class="two wide required field">
+                                        <label for="">Parameter Type:</label>
+                                    </div>
+                                    <div class="five wide required field">
+                                        <input type="text" name="" id="" placeholder="请输入Type...">
+                                    </div>
+                                </div>
+                                <div class="ui divider hidden"></div>
+                                <div class="ui button positive">Submit</div>
                             </div>
-                            <div class="inline fields">
-                                <div class="three wide field">
-                                    <label for="">ID No:</label>
+                        </div>
+                    </div>
+                    <div class="tab trading">
+                        <div class="ui container">
+                            <div class="ui form">
+                                <div class="inline fields">
+                                    <div class="three wide field">
+                                        <label for="">Client NO:</label>
+                                    </div>
+                                    <div class="five wide field">
+                                        <div class="ui icon input">
+                                            <input type="text" placeholder="Search...">
+                                            <i class="search icon"></i>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="field">
-                                    <select name="" id="" class="ui dropdown search">
+                                <div class="inline fields">
+                                    <div class="three wide field">
+                                        <label for="">ID No:</label>
+                                    </div>
+                                    <div class="field">
+                                        <select name="" id="" class="ui dropdown search">
                                         <option value="001">000001</option>
                                         <option value="002">000002</option>
                                         <option value="003">000003</option>
@@ -183,45 +221,45 @@
                                         <option value="009">000009</option>
                                         <option value="0010">0000010</option>
                                     </select>
+                                    </div>
+                                    <div class="five wide field">
+                                        <input type="text" name="" id="" placeholder="请输入ID...">
+                                    </div>
                                 </div>
-                                <div class="five wide field">
-                                    <input type="text" name="" id="" placeholder="请输入ID...">
-                                </div>
-                            </div>
-                            <div class="inline fields">
-                                <div class="three wide field">
-                                    <label for="">Client Type:</label>
-                                </div>
-                                <div class="five wide field">
-                                    <select name="" id="" class="ui dropdown">
+                                <div class="inline fields">
+                                    <div class="three wide field">
+                                        <label for="">Client Type:</label>
+                                    </div>
+                                    <div class="five wide field">
+                                        <select name="" id="" class="ui dropdown">
                                         <option value="001">Type1</option>
                                         <option value="002">Type2</option>
                                         <option value="003">Type3</option>
                                         <option value="004">Type4</option>
                                         <option value="005">Type5</option>
                                     </select>
+                                    </div>
                                 </div>
+                                <div class="inline fields">
+                                    <div class="three wide field">
+                                        <label for="">Full Name(English):</label>
+                                    </div>
+                                    <div class="five wide field">
+                                        <input type="text" name="" id="" placeholder="请输入name...">
+                                    </div>
+                                </div>
+                                <div class="inline fields">
+                                    <div class="three wide field">
+                                        <label for="">Name(Local):</label>
+                                    </div>
+                                    <div class="five wide field">
+                                        <input type="text" name="" id="" placeholder="请输入name...">
+                                    </div>
+                                </div>
+                                <div class="ui divider hidden"></div>
+                                <div class="ui button positive">Submit</div>
                             </div>
-                            <div class="inline fields">
-                                <div class="three wide field">
-                                    <label for="">Full Name(English):</label>
-                                </div>
-                                <div class="five wide field">
-                                    <input type="text" name="" id="" placeholder="请输入name...">
-                                </div>
-                            </div>
-                            <div class="inline fields">
-                                <div class="three wide field">
-                                    <label for="">Name(Local):</label>
-                                </div>
-                                <div class="five wide field">
-                                    <input type="text" name="" id="" placeholder="请输入name...">
-                                </div>
-                            </div>
-                            <div class="ui divider hidden"></div>
-                            <div class="ui button positive">Submit</div>
                         </div>
-                      </div>
                     </div>
                     <div class="tab tabSheet">
                         <div class="ui header center aligned">TabSheet</div>
@@ -309,7 +347,7 @@
                                         </div>
                                     </div>
                                     <div class="inline fields">
-                                        <div class="three wied field">
+                                        <div class="three wide field">
                                             <label for="">Transaction Officer Name:</label>
                                         </div>
                                         <div class="five wide field">
@@ -330,7 +368,8 @@
                             </div>
                             <div subTab="4" class="item tab">
                                 <div class="ui header center aligned">大家好，我是tab4</div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repudiandae quidem rem, nihil, accusamus ratione error ex veritatis maxime excepturi voluptate cupiditate hic aliquam, voluptatem beatae molestias possimus, itaque ad?</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repudiandae quidem rem, nihil, accusamus ratione error ex veritatis maxime excepturi voluptate cupiditate hic aliquam, voluptatem beatae molestias possimus,
+                                    itaque ad?</p>
                             </div>
                         </div>
                     </div>
@@ -766,7 +805,18 @@
             </div>
         </div>
     </div>
-
+    <div class="ui modal test">
+        <div class="header">标题</div>
+        <div class="content">
+            <div class="description">
+                我是一个弹出层😝😝 !
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui negative button">否</div>
+            <div class="ui positive right labeled icon button">是<i class="checkmark icon"></i> </div>
+        </div>
+    </div>
     <div class="ui modal">
         <div class="header">submit</div>
         <div class="content">
@@ -779,6 +829,7 @@
             <div class="ui positive right labeled icon button">是<i class="checkmark icon"></i> </div>
         </div>
     </div>
+    <div class="article"></div>
 
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-    background-image: url(http://akveo.com/blur-admin/assets/img/blur-bg.jpg);
+    /*background-image: url(http://akveo.com/blur-admin/assets/img/blur-bg.jpg);*/
     background-color: #F2F2F2;
 }
 .ui.shape {
@@ -10,14 +10,15 @@ body {
 .ui.shape .sides{
   position: absolute;
   top: 25%;
-  left: 30%;
+  left: 32%;
 }
 .ui.shape .signOn {
     max-width: 600px;
     max-height: 420px;
-    background-color: rgba(0, 0, 0, .55);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .55);
     color: #fff;
+    border-radius: 6px;
 }
 
 .signOn .ui.button {
