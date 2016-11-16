@@ -5,6 +5,9 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/*::-webkit-inner-spin-button { visibility: hidden; }
+::-webkit-calendar-picker-indicator { visibility: hidden; }*/
+
 .column {
     /*border: 1px solid red;*/
 }
