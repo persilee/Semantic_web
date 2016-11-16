@@ -104,7 +104,7 @@ $(function() {
     $('.selection.dropdown').dropdown();
     $('.ui.checkbox').checkbox();
     $('.ui.button.submit').click(function() {
-        $('.ui.modal')
+        $('.ui.modal.submit')
             .modal({
                 blurring: true
             })
@@ -116,5 +116,8 @@ $(function() {
                 blurring: true
             })
             .modal('show');
+    });
+    $('.pup').popup({
+      hoverable  : true
     });
 })

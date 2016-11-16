@@ -18,7 +18,7 @@ body {
     width: 100%;
 }
 
-.ui.grid>.column:not(.row) {
+.ui.grid>.layout.column:not(.row) {
     padding-bottom: 0;
 }
 
@@ -99,7 +99,7 @@ body {
     border-top: none;
 }
 
-.ui.grid>.column:not(.row), .ui.grid>.row>.column {
+.ui.grid>.layout.column:not(.row) {
     padding-left: .6rem;
     padding-right: .1rem;
 }

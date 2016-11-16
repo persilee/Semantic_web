@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <div class="three wide column">
+        <div class="three wide column layout">
             <div class="ui secondary vertical pointing menu">
                 <div class="ui styled accordion">
                     <a class="item active title"><i class="edit left floated icon"></i>元素<i class="dropdown icon"></i></a>
@@ -52,6 +52,7 @@
                             <a class="item" data-name="controlsType">控件类型</a>
                             <a class="item" data-name="forms">表单</a>
                             <a class="item" data-name="tab2">表格</a>
+                            <a class="item" data-name="popup">提示框</a>
                         </div>
                     </div>
                     <a class="item title"><i class="area chart left floated icon"></i>视图<i class="dropdown icon"></i></a>
@@ -97,12 +98,60 @@
                 </div>
             </div>
         </div>
-        <div class="thirteen wide column">
+        <div class="thirteen wide column layout">
             <div class="ui right floated content">
                 <div class="ui main top attached tabular menu">
                     <!-- <a class="item" data-name="tab2">Tab2<i class="remove icon"></i></a> -->
                 </div>
                 <div class="ui main bottom attached segment">
+                    <div class="tab popup">
+                        <div class="ui center aligned header">提示框（popup）</div>
+                        <div class="ui hidden divider"></div>
+                        <div class="ui center aligned container">
+                            <div class="ui icon button pup" data-content="Add users to your feed">
+                                <i class="add icon"></i>
+                            </div>
+                            <div class="ui hidden divider"></div>
+                            <div class="ui header">带标题的提示框</div>
+                            <img src="http://www.semantic-ui.cn/images/avatar/small/elliot.jpg" data-title="Elliot Fu" data-content="Elliot has been a member since July 2012" class="ui avatar image pup">
+                            <img src="http://www.semantic-ui.cn/images/avatar/small/stevie.jpg" data-title="Stevie Feliciano" data-content="Stevie has been a member since August 2013" class="ui avatar image pup">
+                            <img src="http://www.semantic-ui.cn/images/avatar/small/matt.jpg" data-title="Matt" data-content="Matt has been a member since July 2014" class="ui avatar image pup">
+                            <div class="ui hidden divider"></div>
+                            <div class="ui header">显示的位置</div>
+                            <div class="ui button" data-tooltip="Add users to your feed" data-position="top left">Top Left </div>
+                            <div class="ui button" data-tooltip="Add users to your feed" data-position="top center">Top Center </div>
+                            <div class="ui button" data-tooltip="Add users to your feed" data-position="top right">Top Right </div>
+                            <div class="ui hidden divider"></div>
+                            <div class="ui button" data-tooltip="Add users to your feed" data-position="bottom left">Bottom Left </div>
+                            <div class="ui button" data-tooltip="Add users to your feed" data-position="bottom center">Bottom Center </div>
+                            <div class="ui button" data-tooltip="Add users to your feed" data-position="bottom right">Bottom Right </div>
+                            <div class="ui hidden divider"></div>
+                            <div class="ui button" data-tooltip="Add users to your feed" data-position="right center">Right Center </div>
+                            <div class="ui button" data-tooltip="Add users to your feed" data-position="left center">Left Center </div>
+                            <div class="ui hidden divider"></div>
+                            <div class="ui header">内容流动提示框</div>
+                            <div class="ui button pup">Show flowing popup</div>
+                            <div class="ui flowing popup top left transition hidden">
+                                <div class="ui three column divided center aligned grid">
+                                    <div class="column">
+                                        <h4 class="ui header">Basic Plan</h4>
+                                        <p><b>2</b> projects, $10 a month</p>
+                                        <div class="ui small basic button">Choose</div>
+                                    </div>
+                                    <div class="column">
+                                        <h4 class="ui header">Business Plan</h4>
+                                        <p><b>5</b> projects, $20 a month</p>
+                                        <div class="ui small basic button">Choose</div>
+                                    </div>
+                                    <div class="column">
+                                        <h4 class="ui header">Premium Plan</h4>
+                                        <p><b>8</b> projects, $25 a month</p>
+                                        <div class="ui small basic button">Choose</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="tab input">
                         <div class="ui header center aligned">输入框（input）</div>
                         <div class="ui divider hidden"></div>
@@ -817,7 +866,7 @@
             <div class="ui positive right labeled icon button">是<i class="checkmark icon"></i> </div>
         </div>
     </div>
-    <div class="ui modal">
+    <div class="ui modal submit">
         <div class="header">submit</div>
         <div class="content">
             <div class="description">
