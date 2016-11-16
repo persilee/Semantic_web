@@ -198,24 +198,24 @@
                     <div class="tab general">
                         <div class="ui container">
                             <div class="ui divider hidden"></div>
-                            <div class="ui form">
+                            <div class="ui form segment">
                                 <div class="inline fields">
                                     <div class="two wide required field">
                                         <label for="">Parameter No:</label>
                                     </div>
                                     <div class="five wide field">
-                                        <select name="" id="" class="ui dropdown">
-                                <option value="001">000001</option>
-                                <option value="002">000002</option>
-                                <option value="003">000003</option>
-                                <option value="004">000004</option>
-                                <option value="005">000005</option>
-                                <option value="006">000006</option>
-                                <option value="007">000007</option>
-                                <option value="008">000008</option>
-                                <option value="009">000009</option>
-                                <option value="0010">0000010</option>
-                            </select>
+                                        <select name="selectedNo" id="" class="ui dropdown">
+                                            <option value="001">000001</option>
+                                            <option value="002">000002</option>
+                                            <option value="003">000003</option>
+                                            <option value="004">000004</option>
+                                            <option value="005">000005</option>
+                                            <option value="006">000006</option>
+                                            <option value="007">000007</option>
+                                            <option value="008">000008</option>
+                                            <option value="009">000009</option>
+                                            <option value="0010">0000010</option>
+                                      </select>
                                     </div>
                                 </div>
                                 <div class="inline fields">
@@ -223,7 +223,7 @@
                                         <label for="">Parameter ID:</label>
                                     </div>
                                     <div class="five wide required field">
-                                        <input type="text" name="" id="" placeholder="请输入ID...">
+                                        <input type="text" name="parid" id="" placeholder="请输入ID...">
                                     </div>
                                 </div>
                                 <div class="inline fields">
@@ -231,11 +231,12 @@
                                         <label for="">Parameter Type:</label>
                                     </div>
                                     <div class="five wide required field">
-                                        <input type="text" name="" id="" placeholder="请输入Type...">
+                                        <input type="text" name="partype" id="" placeholder="请输入Type...">
                                     </div>
                                 </div>
                                 <div class="ui divider hidden"></div>
-                                <div class="ui button positive">Submit</div>
+                                <button class="ui positive button" type="submit">Submit</button>
+                                <div class="ui error message"></div>
                             </div>
                         </div>
                     </div>
@@ -426,18 +427,18 @@
                         <div class="ui center aligned header">表单</div>
                         <div class="ui divider hidden"></div>
                         <div class="ui left aligned container">
-                            <form class="ui form">
+                            <form class="ui form one">
                                 <div class="field">
                                     <label>First Name</label>
-                                    <input type="text" name="first-name" placeholder="First Name">
+                                    <input type="text" name="firstName" placeholder="First Name">
                                 </div>
                                 <div class="field">
                                     <label>Last Name</label>
-                                    <input type="text" name="last-name" placeholder="Last Name">
+                                    <input type="text" name="lastName" placeholder="Last Name">
                                 </div>
-                                <div class="field">
+                                <div class="inline field">
                                     <div class="ui checkbox">
-                                        <input type="checkbox" tabindex="0" class="hidden">
+                                        <input type="checkbox" name="terms" tabindex="0" class="hidden">
                                         <label>I agree to the Terms and Conditions</label>
                                     </div>
                                 </div>
@@ -605,6 +606,56 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="ui hidden divider"></div>
+                            <div class="ui header">简单的表单验证</div>
+                            <form class="ui form two">
+                                <p>Tell Us About Yourself</p>
+                                <div class="two fields">
+                                    <div class="field">
+                                        <label>Name</label>
+                                        <input placeholder="First Name" name="name" type="text">
+                                    </div>
+                                    <div class="field">
+                                        <label>Gender</label>
+                                        <select class="ui dropdown" name="gender">
+                                          <option value="">Gender</option>
+                                          <option value="male">Male</option>
+                                          <option value="female">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="two fields">
+                                    <div class="field">
+                                        <label>Username</label>
+                                        <input placeholder="Username" name="username" type="text">
+                                    </div>
+                                    <div class="field">
+                                        <label>Password</label>
+                                        <input type="password" name="password">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label>Skills</label>
+                                    <select name="skills" multiple="" class="ui dropdown">
+                                      <option value="">Select Skills</option>
+                                      <option value="css">CSS</option>
+                                      <option value="html">HTML</option>
+                                      <option value="javascript">Javascript</option>
+                                      <option value="design">Graphic Design</option>
+                                      <option value="plumbing">Plumbing</option>
+                                      <option value="mech">Mechanical Engineering</option>
+                                      <option value="repair">Kitchen Repair</option>
+                                    </select>
+                                </div>
+                                <div class="inline field">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" name="terms">
+                                        <label>I agree to the terms and conditions</label>
+                                    </div>
+                                </div>
+                                <div class="ui positive submit button">Submit</div>
+                                <div class="ui error message"></div>
+                            </form>
                         </div>
                     </div>
                     <div class="tab controlsType">
@@ -623,7 +674,6 @@
                         </div>
                         <div class="ui divider hidden"></div>
                         <form class="ui form">
-
                             <div class="field">
                                 <label>Card Type</label>
                                 <div class="ui selection dropdown">

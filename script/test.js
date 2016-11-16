@@ -103,13 +103,13 @@ $(function() {
     $('select.dropdown').dropdown();
     $('.selection.dropdown').dropdown();
     $('.ui.checkbox').checkbox();
-    $('.ui.button.submit').click(function() {
-        $('.ui.modal.submit')
-            .modal({
-                blurring: true
-            })
-            .modal('show');
-    });
+    // $('.ui.button.submit').click(function() {
+    //     $('.ui.modal.submit')
+    //         .modal({
+    //             blurring: true
+    //         })
+    //         .modal('show');
+    // });
     $('.item.modal.test').click(function() {
         $('.ui.modal.test')
             .modal({
@@ -118,6 +118,112 @@ $(function() {
             .modal('show');
     });
     $('.pup').popup({
-      hoverable  : true
+        hoverable: true
     });
+    $('.ui.form.one').form({
+      fields: {
+        firstname: {
+          identifier: 'firstName',
+          rules: [{
+            type: 'empty',
+            prompt: '请输入你的First Name'
+          }]
+        },
+        lastname: {
+          identifier: 'lastName',
+          rules: [{
+            type: 'empty',
+            prompt: '请输入你的Last Name'
+          }]
+        },
+        terms: {
+          identifier: 'terms',
+          rules: [{
+            type: 'checked',
+            prompt: '你必须同意条款'
+          }]
+        }
+      },
+      inline : true,
+      on     : 'blur'
+    });
+    $('.ui.form.two').form({
+            fields: {
+                name: {
+                    identifier: 'name',
+                    rules: [{
+                        type: 'empty',
+                        prompt: 'Please enter your name'
+                    }]
+                },
+                skills: {
+                    identifier: 'skills',
+                    rules: [{
+                        type: 'minCount[2]',
+                        prompt: 'Please select at least two skills'
+                    }]
+                },
+                gender: {
+                    identifier: 'gender',
+                    rules: [{
+                        type: 'empty',
+                        prompt: 'Please select a gender'
+                    }]
+                },
+                username: {
+                    identifier: 'username',
+                    rules: [{
+                        type: 'empty',
+                        prompt: 'Please enter a username'
+                    }]
+                },
+                password: {
+                    identifier: 'password',
+                    rules: [{
+                        type: 'empty',
+                        prompt: 'Please enter a password'
+                    }, {
+                        type: 'minLength[6]',
+                        prompt: 'Your password must be at least {ruleValue} characters'
+                    }]
+                },
+                terms: {
+                    identifier: 'terms',
+                    rules: [{
+                        type: 'checked',
+                        prompt: 'You must agree to the terms and conditions'
+                    }]
+                }
+            }
+        });
+        $.fn.form.settings.defaults = {
+          selectedNo: {
+            identifier: 'selectedNo',
+            rules: [
+              {
+                type: 'empty',
+                pormpt: '请选择NO.'
+              }
+            ]
+          },
+          parid: {
+            identifier: 'parid',
+            rules: [
+              {
+                type: 'empty',
+                prompt: '请输入NO.'
+              }
+            ]
+          },
+          partype: {
+            identifier: 'partype',
+            rules: [
+              {
+                type: 'empty',
+                prompt: '请输入type'
+              }
+            ]
+          }
+        }
+        $('ui.form').form();
 })
