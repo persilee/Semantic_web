@@ -172,6 +172,18 @@ body {
     color: blue;
 }
 
+.dtpicker-buttonCont .dtpicker-button {
+  font-size: .8rem;
+  border-radius: .28571429rem;
+  background-color: #DB2828;
+}
+.dtpicker-mobile .dtpicker-content{
+  box-shadow: 1px 3px 3px 0 rgba(0, 0, 0, .2), 1px 3px 15px 2px rgba(0, 0, 0, .2);
+  -webkit-transform-origin: 50% 25%;
+  transform-origin: 50% 25%;
+  border-radius: .28571429rem;
+}
+
 .notification-ring {
     border-radius: 100px;
     height: 40px;
@@ -191,6 +203,10 @@ body {
 .notification-ring.blue {
     border: 1px solid #565ce8;
 }
+
+/*.hidden {
+  display: block!important;
+}*/
 @-webkit-keyframes pulsate {
   30% {
       -webkit-transform: scale(.1,.1);

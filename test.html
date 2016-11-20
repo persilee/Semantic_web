@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>DahSing Bank</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./semantic/dist/semantic.min.css">
+    <link rel="stylesheet" href="./node_modules/datetimepicker/dist/DateTimePicker.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-table/dist/bootstrap-table.min.css">
     <link rel="stylesheet" href="./css/test.css">
 </head>
 
@@ -35,17 +38,17 @@
                     </div>
                 </div>
                 <a class="item private">
-                  <i class="alarm outline icon"></i>
-                  <div class="floating ui red mini circular label private">5</div>
-                  <div class="notification-ring red"></div>
+                    <i class="alarm outline icon"></i>
+                    <div class="floating ui red mini circular label private">5</div>
+                    <div class="notification-ring red"></div>
                 </a>
                 <a class="item private blue">
-                  <i class="mail outline icon"></i>
-                  <div class="floating ui blue mini circular label private">2</div>
-                  <div class="notification-ring blue"></div>
+                    <i class="mail outline icon"></i>
+                    <div class="floating ui blue mini circular label private">2</div>
+                    <div class="notification-ring blue"></div>
                 </a>
                 <div class="item">
-                  <img class="ui mini circular image" src="http://www.semantic-ui.cn/images/avatar/small/stevie.jpg">
+                    <img class="ui mini circular image" src="http://www.semantic-ui.cn/images/avatar/small/stevie.jpg">
                 </div>
             </div>
         </div>
@@ -313,7 +316,7 @@
                     <div class="tab general">
                         <div class="ui container">
                             <div class="ui divider hidden"></div>
-                            <div class="ui form segment">
+                            <div class="ui form">
                                 <div class="inline fields">
                                     <div class="two wide required field">
                                         <label for="">Parameter No:</label>
@@ -859,28 +862,29 @@
                                 <div class="three wide field">
                                     <label>Date:</label>
                                     <div class="ui icon input">
-
                                         <i class="calendar icon"></i>
-                                        <input type="date" placeholder="Date...">
+                                        <!-- <input type="date" placeholder="Date..."> -->
+                                        <input type="text" data-field="date" placeholder="Date..." readonly>
                                     </div>
                                 </div>
-
                                 <div class="three wide field">
                                     <label>Time:</label>
                                     <div class="ui icon input">
                                         <i class="calendar icon"></i>
-                                        <input type="time" placeholder="Date...">
+                                        <!-- <input type="time" placeholder="Date..."> -->
+                                        <input type="text" data-field="time" placeholder="Time..." readonly>
                                     </div>
                                 </div>
                                 <div class="four wide field">
                                     <label>Datetime:</label>
                                     <div class="ui icon input">
                                         <i class="calendar icon"></i>
-                                        <input type="datetime-local" placeholder="Date...">
+                                        <!-- <input type="datetime-local" placeholder="Date..."> -->
+                                        <input type="text" data-field="datetime" placeholder="Datetime..." readonly>
                                     </div>
                                 </div>
+                                <div id="dtBox"></div>
                             </div>
-
                             <div class="ui segment">
                                 <div class="field">
                                     <div class="ui toggle checkbox">
@@ -1041,6 +1045,30 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="ui hidden divider"></div>
+                        <div class="alert alert-success" id="eventsResult">
+                            Here is the result of event.
+                        </div>
+                        <table id="eventsTable"
+                               data-toggle="table"
+                               data-height="500"
+                               data-url="https://api.github.com/users/wenzhixin/repos?type=owner&sort=full_name&direction=asc&per_page=100&page=1"
+                               data-pagination="true"
+                               data-search="true"
+                               data-show-refresh="true"
+                               data-show-toggle="true"
+                               data-show-columns="true"
+                               data-toolbar="#toolbar">
+                            <thead>
+                            <tr>
+                                <th data-field="state" data-checkbox="true"></th>
+                                <th data-field="name">Name</th>
+                                <th data-field="stargazers_count">Stars</th>
+                                <th data-field="forks_count">Forks</th>
+                                <th data-field="description">Description</th>
+                            </tr>
+                            </thead>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -1075,6 +1103,11 @@
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./semantic/dist/semantic.min.js"></script>
+    <script src="./node_modules/datetimepicker/dist/DateTimePicker.js"></script>
+    <script type="text/javascript" src="./node_modules/datetimepicker/dist/i18n/DateTimePicker-i18n-zh-CN.js"></script>
+    <script src="./node_modules/bootstrap-table/dist/bootstrap-table.min.js"></script>
+    <script src="./node_modules/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+    <script src="./script/bootstrap.min.js"></script>
     <script src="./script/test.js"></script>
 </body>
 
