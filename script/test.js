@@ -6,6 +6,9 @@ $(function() {
     $('.thirteen.wide.column').height($(window).height() - 62);
     $('.ui.right.floated.content').height($(window).height() - 62);
     $('.ui.bottom.attached.segment.main .tab').addClass('hidden');
+    /*
+     * 黑色跟踪游标
+     */
     $('.ui.vertical.text.menu .item,.ui.styled.accordion .title').on({
         mouseover: function() {
             clearTimeout(timer);
@@ -17,7 +20,9 @@ $(function() {
             }, 300);
         }
     });
-
+    /*
+     * 切换边栏
+     */
     $('.ui.button.bar').click(function() {
         if (isMenu) {
             $('.three.wide.column').transition('fly right', 600, function() {
@@ -34,6 +39,9 @@ $(function() {
         }
         $('.three.wide.column').height($(window).height() - 62);
     });
+    /*
+     * 点击菜单会打开tab页，再次点击已经打开的tab页会定位到此页面
+     */
     $('.ui.vertical.text.menu').on('click', '.item', function() {
         $('.ui.vertical.text.menu .item').removeClass('header');
         $(this).addClass('header');
@@ -64,12 +72,18 @@ $(function() {
             }
         }
     });
+    /*
+     * tab页切换，点击时候会获取active状态和显示对应的内容页
+     */
     $('.ui.tabular.main').on('click', '.item', function() {
         $('.ui.tabular.main .item').removeClass('active');
         $(this).addClass('active');
         $('.ui.bottom.attached.segment.main .tab').addClass('hidden');
         $('.ui.bottom.attached.segment.main .' + $(this).attr('data-name')).removeClass('hidden');
     });
+    /*
+     * 关闭tab页，鼠标放到tab页上会显示XX点击可以移除tab页同时隐藏对应的内容页
+     */
     $('.ui.tabular.menu.main').on('click', '.item .remove.icon', function() {
         var classText = $(this).parent().attr('class');
         if (classText.indexOf('active') >= 0) {
@@ -88,6 +102,9 @@ $(function() {
         }
         return false;
     });
+    /*
+     * 定位到tab页
+     */
     $('.ui.top.attached.tabular.menu:not(.main)').on('click', '.item', function() {
         $('.ui.top.attached.tabular.menu:not(.main) .item').removeClass('active');
         $(this).addClass('active');
@@ -97,60 +114,80 @@ $(function() {
         $('.ui.bottom.attached.segment:not(.main) .item.tab').eq($(this).index()).show();
         return false;
     });
+    /*
+     * 初始化手风琴
+     */
     $('.ui.accordion').accordion({
         exclusive: false
     });
+    /*
+     * 初始化下拉列表
+     */
     $('select.dropdown').dropdown();
     $('.selection.dropdown').dropdown();
+    /*
+     * 初始化复选框和单选框
+     */
     $('.ui.checkbox').checkbox();
-    $("#dtBox").DateTimePicker({
-        language: "zh-CN"
+    //   $("#dtBox").DateTimePicker({
+    //      language: "zh-CN"
+    //  });
+    /*
+     * 初始化时间插件
+     */
+    $('#example1').calendar();
+    $('#example2').calendar({
+        type: 'date'
     });
-
-    $(function () {
-    var $result = $('#eventsResult');
-
-    $('#eventsTable').on('all.bs.table', function (e, name, args) {
-        console.log('Event:', name, ', data:', args);
-    })
-    .on('click-row.bs.table', function (e, row, $element) {
-        $result.text('Event: click-row.bs.table');
-    })
-    .on('dbl-click-row.bs.table', function (e, row, $element) {
-        $result.text('Event: dbl-click-row.bs.table');
-    })
-    .on('sort.bs.table', function (e, name, order) {
-        $result.text('Event: sort.bs.table');
-    })
-    .on('check.bs.table', function (e, row) {
-        $result.text('Event: check.bs.table');
-    })
-    .on('uncheck.bs.table', function (e, row) {
-        $result.text('Event: uncheck.bs.table');
-    })
-    .on('check-all.bs.table', function (e) {
-        $result.text('Event: check-all.bs.table');
-    })
-    .on('uncheck-all.bs.table', function (e) {
-        $result.text('Event: uncheck-all.bs.table');
-    })
-    .on('load-success.bs.table', function (e, data) {
-        $result.text('Event: load-success.bs.table');
-    })
-    .on('load-error.bs.table', function (e, status) {
-        $result.text('Event: load-error.bs.table');
-    })
-    .on('column-switch.bs.table', function (e, field, checked) {
-        $result.text('Event: column-switch.bs.table');
-    })
-    .on('page-change.bs.table', function (e, number, size) {
-        $result.text('Event: page-change.bs.table');
-    })
-    .on('search.bs.table', function (e, text) {
-        $result.text('Event: search.bs.table');
+    $('#example3').calendar({
+        type: 'time'
     });
-});
+    /*
+     * bootstrap-table插件事件
+     */
+    $(function() {
+        var $result = $('#eventsResult');
 
+        $('#eventsTable').on('all.bs.table', function(e, name, args) {
+                console.log('Event:', name, ', data:', args);
+            })
+            .on('click-row.bs.table', function(e, row, $element) {
+                $result.text('Event: click-row.bs.table');
+            })
+            .on('dbl-click-row.bs.table', function(e, row, $element) {
+                $result.text('Event: dbl-click-row.bs.table');
+            })
+            .on('sort.bs.table', function(e, name, order) {
+                $result.text('Event: sort.bs.table');
+            })
+            .on('check.bs.table', function(e, row) {
+                $result.text('Event: check.bs.table');
+            })
+            .on('uncheck.bs.table', function(e, row) {
+                $result.text('Event: uncheck.bs.table');
+            })
+            .on('check-all.bs.table', function(e) {
+                $result.text('Event: check-all.bs.table');
+            })
+            .on('uncheck-all.bs.table', function(e) {
+                $result.text('Event: uncheck-all.bs.table');
+            })
+            .on('load-success.bs.table', function(e, data) {
+                $result.text('Event: load-success.bs.table');
+            })
+            .on('load-error.bs.table', function(e, status) {
+                $result.text('Event: load-error.bs.table');
+            })
+            .on('column-switch.bs.table', function(e, field, checked) {
+                $result.text('Event: column-switch.bs.table');
+            })
+            .on('page-change.bs.table', function(e, number, size) {
+                $result.text('Event: page-change.bs.table');
+            })
+            .on('search.bs.table', function(e, text) {
+                $result.text('Event: search.bs.table');
+            });
+    });
     // $('.ui.button.submit').click(function() {
     //     $('.ui.modal.submit')
     //         .modal({
@@ -158,6 +195,9 @@ $(function() {
     //         })
     //         .modal('show');
     // });
+    /*
+     * 初始化弹出层
+     */
     $('.item.modal.test').click(function() {
         $('.ui.modal.test')
             .modal({
@@ -165,10 +205,15 @@ $(function() {
             })
             .modal('show');
     });
+    /*
+     * 初始化消息框
+     */
     $('.pup').popup({
         hoverable: true
     });
-
+    /*
+     * 表单验证规则及提醒信息
+     */
     $('.ui.form.one').form({
         fields: {
             firstname: {
@@ -197,6 +242,7 @@ $(function() {
         on: 'blur'
     });
     $('.ui.form.two').form({
+        on: 'blur',
         fields: {
             name: {
                 identifier: 'name',
@@ -268,5 +314,4 @@ $(function() {
             }]
         }
     }
-    $('ui.form').form();
 })

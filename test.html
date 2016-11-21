@@ -7,7 +7,8 @@
     <title>DahSing Bank</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./semantic/dist/semantic.min.css">
-    <link rel="stylesheet" href="./node_modules/datetimepicker/dist/DateTimePicker.min.css">
+    <!-- <link rel="stylesheet" href="./node_modules/datetimepicker/dist/DateTimePicker.min.css"> -->
+    <link rel="stylesheet" href="./node_modules/semantic-ui-calendar/dist/calendar.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-table/dist/bootstrap-table.min.css">
     <link rel="stylesheet" href="./css/test.css">
 </head>
@@ -858,32 +859,49 @@
                                 </div>
                             </div>
                             <h4 class="ui dividing header">Date <lable class="ui samll">To choose time:</lable></h4>
-                            <div class="fields">
-                                <div class="three wide field">
-                                    <label>Date:</label>
-                                    <div class="ui icon input">
+                            <div class="ui container">
+                                <div class="fields">
+                                    <div class="three wide field">
+                                        <label>Date:</label>
+                                        <div class="ui calendar" id="example2">
+                                            <div class="ui input left icon">
+                                                <i class="calendar icon"></i>
+                                                <input type="text" placeholder="Date">
+                                            </div>
+                                        </div>
+                                        <!-- <div class="ui icon input">
                                         <i class="calendar icon"></i>
-                                        <!-- <input type="date" placeholder="Date..."> -->
                                         <input type="text" data-field="date" placeholder="Date..." readonly>
+                                    </div> -->
                                     </div>
-                                </div>
-                                <div class="three wide field">
-                                    <label>Time:</label>
-                                    <div class="ui icon input">
+                                    <div class="three wide field">
+                                        <label>Time:</label>
+                                        <div class="ui calendar" id="example3">
+                                            <div class="ui input left icon">
+                                                <i class="time icon"></i>
+                                                <input type="text" placeholder="Time">
+                                            </div>
+                                        </div>
+                                        <!-- <div class="ui icon input">
                                         <i class="calendar icon"></i>
-                                        <!-- <input type="time" placeholder="Date..."> -->
                                         <input type="text" data-field="time" placeholder="Time..." readonly>
+                                    </div> -->
                                     </div>
-                                </div>
-                                <div class="four wide field">
-                                    <label>Datetime:</label>
-                                    <div class="ui icon input">
+                                    <div class="four wide field">
+                                        <label>Datetime:</label>
+                                        <div class="ui calendar" id="example1">
+                                            <div class="ui input left icon">
+                                                <i class="calendar icon"></i>
+                                                <input type="text" placeholder="Date/Time">
+                                            </div>
+                                        </div>
+                                        <!-- <div class="ui icon input">
                                         <i class="calendar icon"></i>
-                                        <!-- <input type="datetime-local" placeholder="Date..."> -->
                                         <input type="text" data-field="datetime" placeholder="Datetime..." readonly>
+                                    </div> -->
                                     </div>
+                                    <div id="dtBox"></div>
                                 </div>
-                                <div id="dtBox"></div>
                             </div>
                             <div class="ui segment">
                                 <div class="field">
@@ -1049,24 +1067,16 @@
                         <div class="alert alert-success" id="eventsResult">
                             Here is the result of event.
                         </div>
-                        <table id="eventsTable"
-                               data-toggle="table"
-                               data-height="600"
-                               data-url="https://api.github.com/users/wenzhixin/repos?type=owner&sort=full_name&direction=asc&per_page=100&page=1"
-                               data-pagination="true"
-                               data-search="true"
-                               data-show-refresh="true"
-                               data-show-toggle="true"
-                               data-show-columns="true"
-                               data-toolbar="#toolbar">
+                        <table id="eventsTable" data-toggle="table" data-height="600" data-url="https://api.github.com/users/wenzhixin/repos?type=owner&sort=full_name&direction=asc&per_page=100&page=1" data-pagination="true" data-search="true" data-show-refresh="true" data-show-toggle="true"
+                            data-show-columns="true" data-toolbar="#toolbar">
                             <thead>
-                            <tr>
-                                <th data-field="state" data-checkbox="true"></th>
-                                <th data-field="name" data-sortable="true">Name</th>
-                                <th data-field="stargazers_count" data-sortable="true">Stars</th>
-                                <th data-field="forks_count" data-sortable="true">Forks</th>
-                                <th data-field="description" data-sortable="true">Description</th>
-                            </tr>
+                                <tr>
+                                    <th data-field="state" data-checkbox="true"></th>
+                                    <th data-field="name" data-sortable="true">Name</th>
+                                    <th data-field="stargazers_count" data-sortable="true">Stars</th>
+                                    <th data-field="forks_count" data-sortable="true">Forks</th>
+                                    <th data-field="description" data-sortable="true">Description</th>
+                                </tr>
                             </thead>
                         </table>
                     </div>
@@ -1102,12 +1112,13 @@
 
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./semantic/dist/semantic.min.js"></script>
-    <script src="./node_modules/datetimepicker/dist/DateTimePicker.js"></script>
-    <script type="text/javascript" src="./node_modules/datetimepicker/dist/i18n/DateTimePicker-i18n-zh-CN.js"></script>
+    <!-- <script src="./node_modules/datetimepicker/dist/DateTimePicker.js"></script> -->
+    <!-- <script type="text/javascript" src="./node_modules/datetimepicker/dist/i18n/DateTimePicker-i18n-zh-CN.js"></script> -->
+    <script src="./node_modules/semantic-ui-calendar/dist/calendar.min.js"></script>
     <script src="./node_modules/bootstrap-table/dist/bootstrap-table.min.js"></script>
     <script src="./node_modules/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
     <script src="./script/bootstrap.min.js"></script>
+    <script src="./semantic/dist/semantic.min.js"></script>
     <script src="./script/test.js"></script>
 </body>
 
